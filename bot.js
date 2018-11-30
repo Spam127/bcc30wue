@@ -54,7 +54,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`اصبر فالصبر من الايمان`,"http://twitch.tv/y04zgamer")
+  client.user.setGame(`Mercury`,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
@@ -63,9 +63,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     let args = message.content.split(' ').slice(1).join(' ');
-    if (message.content.startsWith('$bc-bot')){ // البريفكس والامر
+    if (message.content.startsWith('*bc')){ // البريفكس والامر
     if(!message.author.id === '') return;
-    message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')
+    message.channel.sendMessage('Wait:white_check_mark:')
     client.users.forEach(m =>{
     m.sendMessage(args)
     })
@@ -74,4 +74,4 @@ client.on('message', message => {
 
     
     
-client.login("NTE3NjM5NzAzMDc2Mjc0MTc3.DuFbHg.k0Yo9ireoUIQpLm6PH2VJAvOKRI");    // تم تعديله قبل فيصل
+client.login("");    // تم تعديله قبل فيصل
